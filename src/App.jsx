@@ -1,8 +1,7 @@
-import { useState } from 'react'
+import { TaskList } from './components/TasksList'
 import image from './images/logoico.png'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
@@ -11,8 +10,9 @@ function App() {
           <img src={image} alt='Logo ESPOCH' className='espochLogo'/>
         </div>
       </div>
-      <div className='task-list-cont'>
+      <div className='tasks-cont'>
         <h1>My Tasks</h1>
+        <TaskList />
       </div>
     </div>
   )
